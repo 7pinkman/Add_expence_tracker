@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Expence Tracker App</h1>
+    </header>
+    <form id="my-form">
+        <label>Choose Expences Amount</label>
+        <input type="text" id="amount" name="amount" />
+        <label>Choose Description</label>
+        <input type="description" id="description" name="description" required/>
+        <label>Chose a category</label> 
+        <select id="category">
+            <option value="-1" selected>select..</option>
+            <option value="movie" selected>Movies</option>
+            <option value="game" selected>Games</option>
+            <option value="reading" selected>Reading</option>
+            <option value="rides" selected>Rides</option>
+            <option value="swiming" selected>Swiming</option>
+            <option value="shopping" selected>Shopping</option>
+            <option value="food" selected>Food</option>
+        </select>
+        <input type="Submit" class="id" value="Addexpense" />
+    </form>
+    <ul id="listofitems"></ul>
+
+
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+</body>
+</html>
